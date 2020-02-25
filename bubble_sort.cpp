@@ -10,15 +10,15 @@ int main(int argc ,char * argv[]){
 	printer(a,len);
 	int flag;
 	for(int i =0;i<len-1;i++){
-		flag = 0;
-		for(int j=0;j<len-i-1;j++){
+//		flag = 0;
+//		for(int j=0;j<len-i-1;j++){
 			if(a[j]>a[j+1]){
-				flag++;
+//				flag++;
 				swap(&a[j],&a[j+1]);
-				count++;
+//				count++;
 			}
 		}
-		if(flag == 0)break;
+//		if(flag == 0)break;
 	}
 	printer(a,len);
 	cout<<"no of swap = "<<count<<endl;
